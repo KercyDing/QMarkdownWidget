@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "QMarkdownWidget"
+version = "1.2.0"
+authors = [
+    { name="KercyDing", email="dkx215417@gmail.com" },
+]
+description = "A Python library providing modern Markdown and LaTeX widgets for PyQt/PySide."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "markdown-it-py",
+    "linkify-it-py",
+    "qtpy",
+    # Add other dependencies as they are identified
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/QMarkdownWidget"
+Issues = "https://github.com/yourusername/QMarkdownWidget/issues"
+
+[project.optional-dependencies]
+pyqt6 = ["PyQt6", "PyQt6-WebEngine"]
+pyside6 = ["PySide6", "PySide6-WebEngine"] 
